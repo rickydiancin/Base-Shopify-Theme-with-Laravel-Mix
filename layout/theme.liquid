@@ -37,8 +37,10 @@
     {% endif %}
   {% endif %}
 
-  <main role="main">
+  <main role="main" id="app">
     {{ content_for_layout }}
   </main>
+
+{{ 'app.js' | asset_url | script_tag }}  
 </body>
 </html>
